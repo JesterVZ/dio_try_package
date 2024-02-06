@@ -42,28 +42,28 @@ class DtoError extends AppError{
   DtoError({ super.stackTrace, super.cause, this.error});
 
   @override
-  String get code => "DtoError Error";
+  String get code => "DtoError";
 }
 class ParsingError extends AppError {
 
   ParsingError({ super.stackTrace, super.cause});
 
   @override
-  String get code => "ParsingError Error";
+  String get code => "ParsingError";
 }
 class UnknownError extends AppError{
   UnknownError({ super.stackTrace, super.cause, this.error});
   final Object? error;
 
   @override
-  String get code => "UnknownError Error";
+  String get code => "UnknownError";
 }
 
 class SocketError extends AppError{
   SocketError({super.stackTrace, super.cause});
 
   @override
-  String get code => "SocketError Error";
+  String get code => "SocketError";
 }
 
 
@@ -213,7 +213,6 @@ FutureTry<T> safeCall<T>(TryCall<T> action) async {
   } on SocketException catch(e, stack){
     return Try.error(SocketError (stackTrace: stack, cause: e));
   } on IOException catch(e, stack){
-    // Скорее всего траблы с коннектом
     return Try.error(
         ConnectionError(
             stackTrace: stack,
@@ -221,7 +220,6 @@ FutureTry<T> safeCall<T>(TryCall<T> action) async {
         )
     );
   } on TypeError catch(e, stack){
-    /// DTO error
     return Try.error(
         DtoError(
             stackTrace: stack,
@@ -229,7 +227,6 @@ FutureTry<T> safeCall<T>(TryCall<T> action) async {
         )
     );
   } catch (e, stack){
-    // Неперехваченная выше ошибка
     return Try.error(
         UnknownError(
             error: e,

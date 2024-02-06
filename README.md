@@ -7,7 +7,7 @@ To use TryDio in your Flutter project, add it as a dependency in your pubspec.ya
 ``` dart
 yaml
 dependencies:
-  try_dio: ^0.0.4
+  try_dio: ^0.0.5
 ```
 Usage
 Basic Example

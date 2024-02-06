@@ -13,3 +13,7 @@ add license
 ## 0.0.4
 
 fix dependency
+
+## 0.0.5
+
+rename code error
