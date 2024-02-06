@@ -1,6 +1,6 @@
 name: try_dio
 description: "Package for catch all Dio exceptions"
-version: 0.0.3
+version: 0.0.4
 homepage: https://github.com/JesterVZ/dio_try_package
 
 environment:
@@ -8,7 +8,7 @@ environment:
   flutter: ">=1.17.0"
 
 dependencies:
-  dio: ^5.4.0
+  dio: '>=5.4.0 <6.0.0'
   flutter:
     sdk: flutter
 
