@@ -1,6 +1,6 @@
 name: try_dio
 description: "Package for catch all Dio exceptions"
-version: 0.0.1
+version: 0.0.3
 homepage: https://github.com/JesterVZ/dio_try_package
 
 environment:
