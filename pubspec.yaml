@@ -1,6 +1,6 @@
 name: try_dio
-description: "Package for catch all Dio exceptions"
-version: 0.0.5
+description: "Package for catch all Dio exceptions. It provides a robust framework for making HTTP requests while gracefully handling exceptions and errors that may occur during network communication"
+version: 0.0.6
 homepage: https://github.com/JesterVZ/dio_try_package
 
 environment:

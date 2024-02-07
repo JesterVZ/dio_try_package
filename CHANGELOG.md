@@ -17,3 +17,7 @@ fix dependency
 ## 0.0.5
 
 rename code error
+
+## 0.0.6
+
+Add normal example, how to use this packages

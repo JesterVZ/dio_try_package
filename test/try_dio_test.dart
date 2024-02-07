@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:dio/dio.dart';
-import 'package:try_dio/try_package.dart';
+import 'package:try_dio/try_dio.dart';
 
 void main() {
   group('safeCall tests', () {
